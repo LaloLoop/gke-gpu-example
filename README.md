@@ -38,7 +38,7 @@ Optionally setup a new `gcloud`configuration.
 ```shell
 gcloud config configurations create poc
 gcloud config set project <service-project-id>
-gcloud config set account eduardo@yalo.co
+gcloud config set account <your-company-account>
 ```
 Configure kubectl.
 
