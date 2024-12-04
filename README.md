@@ -28,3 +28,27 @@ Run the following command to create all resources.
 ```
 terraform apply
 ```
+
+## Connecting to the cluster
+
+Run the following commands to configure your kubectl client.
+
+Optionally setup a new `gcloud`configuration.
+
+```shell
+gcloud config configurations create poc
+gcloud config set project <service-project-id>
+gcloud config set account eduardo@yalo.co
+```
+Configure kubectl.
+
+```shell
+gcloud container clusters list
+gcloud container clusters get-credentials gke-gpu-cluster --location <listed-location-above>
+```
+
+Verify by listing nodes
+
+```shell
+kubectl get nodes
+```
