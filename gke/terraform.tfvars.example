@@ -1,0 +1,4 @@
+billing_account="REPLACE_ME"
+org_id="REPLACE_ME"
+project_unique_id="REPLACE_ME"
+master_authorized_networks = []
